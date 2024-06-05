@@ -35,7 +35,7 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/mycsharpapp:latest
 
    - name: Send email notification
-     uses: hilarion5/send-mail@v1.2.0
+     uses: dawidd6/action-send-mail
      with:
           address: ${{ secrets.EMAIL_ADDRESS }}
           server_address: ${{ secrets.EMAIL_SERVER }}
